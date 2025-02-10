@@ -24,16 +24,16 @@ function App() {
 
   return (
     <Router>
-      <div className="flex min-h-screen bg-dark text-lightGray">
+      <div className="flex min-h-screen bg-neutral-800 text-lightGray">
         {/* サイドメニュー */}
-        <nav className="w-64 text-shockingPink p-4">
-          <h1 className="text-2xl font-bold mb-6">書籍管理</h1>
-          <ul>
-            <li className="mb-2">
-              <Link to="/" className="hover:text-gray-300">書籍一覧</Link>
+        <nav className="w-70 bg-neutral-750-gradient p-6 shadow-lg">
+          <h1 className="text-4xl font-extrabold mb-8">📚 書籍管理</h1>
+          <ul className="space-y-4">
+            <li>
+              <Link to="/" className="block text-xl hover:underline">📖 書籍一覧</Link>
             </li>
             <li>
-              <Link to="/add" className="hover:text-gray-300">書籍を追加</Link>
+              <Link to="/add" className="block text-xl hover:underline">➕ 書籍を追加</Link>
             </li>
           </ul>
         </nav>

@@ -18,30 +18,29 @@ export default function AddBookForm({ onAddBook }: AddBookFormProps) {
     }
 
     return (
-        <form onSubmit={handleSubmit} className="p-4 rounded shadow">
-            <div className="mb-4">
-            <label className="block text-gray-700 font-bold mb-2">タイトル</label>
-            <input
-                type="text"
-                value={title}
-                onChange={(e) => setTitle(e.target.value)}
-                className="w-full p-2 border border-gray-300 rounded"
-                placeholder="書籍のタイトルを入力"
-            />
+        <form onSubmit={handleSubmit} className="p-10 mt-10">
+            <div className="mb-6">
+                <label className="block text-xl text-lightGray font-bold mb-2">タイトル</label>
+                <input
+                    type="text"
+                    value={title}
+                    onChange={(e) => setTitle(e.target.value)}
+                    className="w-full p-2 bg-neutral-700 focus:ring-1 focus:ring-shockingPink focus:outline-none rounded"
+                    placeholder="書籍のタイトルを入力"
+                />
             </div>
-            <div className="mb-4">
-            <label className="block text-gray-700 font-bold mb-2">著者</label>
-            <input
-                type="text"
-                value={author}
-                onChange={(e) => setAuthor(e.target.value)}
-                className="w-full p-2 border border-gray-300 rounded"
-                placeholder="著者名を入力"
-            />
+            <div className="mb-6">
+                <label className="block text-xl text-lightGray font-bold mb-2">著者</label>
+                <input
+                    type="text"
+                    value={author}
+                    onChange={(e) => setAuthor(e.target.value)}
+                    className="w-full p-2 bg-neutral-700 focus:ring-1 focus:ring-shockingPink focus:outline-none rounded"
+                    placeholder="著者名を入力"
+                />
             </div>
-            <button
-            type="submit"
-            className="w-full bg-shockingPink text-white py-2 px-4 rounded transition"
+            <button type="submit"
+                className="w-full bg-shockingPink text-lightGray mt-5 py-3 px-6 rounded-lg hover:bg-pink-600 transition-all duration-300"
             >
             書籍を追加
             </button>

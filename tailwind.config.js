@@ -9,7 +9,7 @@ export default {
         shockingPink: '#ff007f',
         dark: '1a1a1a',
         lightGray: '#e5e5e5',
-      }
+      },
     },
   },
   plugins: [],
